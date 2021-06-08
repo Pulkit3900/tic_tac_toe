@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 String buttonId=((Button) v).getResources().getResourceEntryName(((Button) v).getId());
         int gameStatePointer=Integer.parseInt( buttonId.substring(buttonId.length()-1,buttonId.length()));
 Log.d("gameStatePointer:", gameStatePointer+"");
+Log.d( "ABC:", "ABC");
         if(activeplayer){
             ((Button)v).setText("X");
             ((Button)v).setTextColor(Color.parseColor("#FFC34A"));
